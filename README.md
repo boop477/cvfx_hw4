@@ -17,8 +17,8 @@
 希望通過infinite zoom的一些方法可以給人帶來一種不斷下墜的感覺的圖片。
 
 | Where | Images  |
-| :--------: | :--------: | :------: |:------: |
-| 台達館陽台(上)    | ![](https://i.imgur.com/EnJIRmL.jpg)| 
+| :--------: | :--------: | 
+| 台達館陽台(上)| ![](https://i.imgur.com/EnJIRmL.jpg)| 
 |台達館陽台(下)|![](https://i.imgur.com/G1zNR93.jpg)|
 
 
@@ -32,18 +32,18 @@ ORB結合FAST（Features from Accelerated Segment Test）和BRIEF（Binary Robus
 1.  通過FAST的方法來找特征點：
    選取圖像中的某一個像素點p，設定threshold value `t`，將p與它周圍的`N`個像素點相比較，當兩點的gray scale value大於`t`則認為兩點不相同，p點不同於周圍大部分的點則認為p點為特征點。
 2. 通過Intensity Centroid的方法來推測角點方向<br>
-   ![](https://i.imgur.com/KLXXNWe.png)<br>
+   *<p align="center">![](https://i.imgur.com/KLXXNWe.png)</p>*<br>
    *<p align="center">The moments of a patch</p>*<br>
-![](https://i.imgur.com/yx0vUDs.png)<br>
+ *<p align="center">![](https://i.imgur.com/yx0vUDs.png)</p>*<br>
 *<p align="center">Find the centroid</p>*<br>
-![](https://i.imgur.com/pYqF5DY.png)<br>
+ *<p align="center">![](https://i.imgur.com/pYqF5DY.png)</p>*<br>
 *<p align="center">The orientation of the patch</p>*<br>
 3. 旋轉相關BRIEF來更好的描述特征<br>
-![](https://i.imgur.com/xunPFqv.png)<br>
+*<p align="center">![](https://i.imgur.com/xunPFqv.png)</p>*<br>
 *<p align="center">The definition of a smoothed image patch's binary test</p>*<br>
-![](https://i.imgur.com/KMOg9OP.png)<br>
+*<p align="center">![](https://i.imgur.com/KMOg9OP.png)</p>*<br>
 *<p align="center">A vector of n binary tests ( p(x)：the intensity of p at a point x )</p>*<br>
-![](https://i.imgur.com/Beev6o3.png)
+*<p align="center">![](https://i.imgur.com/Beev6o3.png)</p>*<br>
 *<p align="center">The steered BRIEF operator</p>*<br>
 
 ### Implement different feature extrators
@@ -64,7 +64,7 @@ ORB結合FAST（Features from Accelerated Segment Test）和BRIEF（Binary Robus
 
 ## Image alignment and infinite zooming effect
 
-![Alt Text](https://media.giphy.com/media/KbSZcqC434Dd1imFYf/giphy.gif)<br>
+*<p align="center">![Alt Text](https://media.giphy.com/media/KbSZcqC434Dd1imFYf/giphy.gif)</p>*<br>
 我們用台達一樓木板凳做infinite zoom。理想上木板凳上面木條的接縫可以帶來很好的視覺效果，但是接起來後會有很明顯的邊界。
 
 
