@@ -88,7 +88,7 @@ SIFT和SURF則均採取了FLANN的方法進行matching<br>
 | :--------: | :--------: | 
 |Original| ![](https://i.imgur.com/tM6JJgs.jpg)|
 |First effect | ![Alt Text](https://media.giphy.com/media/VzqaEkLza9A43bon6V/giphy.gif) | 
-|Seceond effect | ![Alt Text](https://media.giphy.com/media/VIVtDhjA5dA3JyNQ1x/giphy.gif)  |
+|Second effect | ![Alt Text](https://media.giphy.com/media/VIVtDhjA5dA3JyNQ1x/giphy.gif)  |
 <br>
 <p align="center">Infinite zooming results </p><br>
 不斷下墜的infinite zoom effect設計過程中，發現道路上的標誌與字會在mapping中產生重複出現造成不真實感，於是我們在特效的處理前先進行影像的croping選取靠近大樓墻壁一側的圖像。effect設計了兩種，第一種是簡單的infinite的下墜，第二種effect在圖像邊緣設計了扭曲的特效，製造了下墜的動態感。
