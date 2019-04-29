@@ -75,7 +75,7 @@ SIFT和SURF則均採取了FLANN的方法進行matching<br>
 |  SURF  | ![](https://i.imgur.com/fh589qM.jpg)  |
 
 <br>
-*<p align="center">The result of feature extraction and matching </p>*<br>
+<p align="center">The result of feature extraction and matching </p><br>
 相比之下，ORB的準確度和速度是三者中最優的。SURF的速度次之，SIFT最慢。
 
 ## Image alignment and infinite zooming effect
