@@ -64,17 +64,21 @@ SURF是以SITF為基礎，並對其運算進行加速，使用box filter对LoG�
 
 ### Result
 
+ORB的方法提取了兩張圖100種特徵進行matching<br>
+SIFT和SURF則均採取了FLANN的方法進行matching<br>
 | Image | Feature matching | 
 | :--------: | :--------: | 
 |Original| ![](https://i.imgur.com/cLhcpEr.jpg)  |
 |  ORB   | ![](https://i.imgur.com/dR0HjOx.jpg)  | 
 |  SIFT  | ![](https://i.imgur.com/MAsfWwP.jpg)  | 
 |  SURF  | ![](https://i.imgur.com/fh589qM.jpg)  |
-
+*<p align="center">The result of feature extraction and matching </p>*<br>
+相比之下，ORB的準確度和速度是三者中最優的。SURF的速度次之，SIFT最慢。
 
 ## Image alignment and infinite zooming effect
 
 *<p align="center">![Alt Text](https://media.giphy.com/media/KbSZcqC434Dd1imFYf/giphy.gif)</p>*<br>
+*<p align="center">Infinite zooming result </p>*<br>
 我們用台達一樓木板凳做infinite zoom。理想上木板凳上面木條的接縫可以帶來很好的視覺效果，但是接起來後會有很明顯的邊界。
 
 
