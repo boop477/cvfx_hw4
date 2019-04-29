@@ -66,12 +66,15 @@ SURF是以SITF為基礎，並對其運算進行加速，使用box filter对LoG�
 
 ORB的方法提取了兩張圖100種特徵進行matching<br>
 SIFT和SURF則均採取了FLANN的方法進行matching<br>
+
 | Image | Feature matching | 
 | :--------: | :--------: | 
 |Original| ![](https://i.imgur.com/cLhcpEr.jpg)  |
 |  ORB   | ![](https://i.imgur.com/dR0HjOx.jpg)  | 
 |  SIFT  | ![](https://i.imgur.com/MAsfWwP.jpg)  | 
 |  SURF  | ![](https://i.imgur.com/fh589qM.jpg)  |
+
+<br>
 *<p align="center">The result of feature extraction and matching </p>*<br>
 相比之下，ORB的準確度和速度是三者中最優的。SURF的速度次之，SIFT最慢。
 
