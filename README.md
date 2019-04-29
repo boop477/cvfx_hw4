@@ -48,7 +48,7 @@ ORB結合FAST（Features from Accelerated Segment Test）和BRIEF（Binary Robus
 
 ### Implement different feature extrators
 * SIFT ( Scale-Invariant Feature Transform )
-當圖片進行縮放、平移或是旋轉，SIFT依舊能找到兩張圖片所對應的角點，並提取出相應的特徵。
+當圖片進行縮放、平移或是旋轉，SIFT依舊能找到兩張圖片所對應的角點，並提取出相應的特徵。<br>
 Steps：
 1. 使用DoG（ Difference of Gaussian ）在不同的尺度空間找特徵點。
 2. 對得到的特徵點進行穩定度檢測，得到特徵點的尺度和位置。
