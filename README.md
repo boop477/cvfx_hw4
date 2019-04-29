@@ -48,7 +48,15 @@ ORB結合FAST（Features from Accelerated Segment Test）和BRIEF（Binary Robus
 
 ### Implement different feature extrators
 * SIFT ( Scale-Invariant Feature Transform )
+當圖片進行縮放、平移或是旋轉，SIFT依舊能找到兩張圖片所對應的角點，並提取出相應的特徵。
+Steps：
+1. 使用DoG（ Difference of Gaussian ）在不同的尺度空間找特徵點。
+2. 對得到的特徵點進行穩定度檢測，得到特徵點的尺度和位置。
+3. 計算圖像的梯度圖，確定特徵點方向。
+4. 使用圖像的局部梯度作為特徵點的描述，構成SIFT的特徵向量。
+
 * SURF ( Speeded Up Robust Features )
+SURF是以SITF為基礎，並對其運算進行加速，使用box filter对LoG進行近似，而不是用DoG對LoG進行近似（SIFT）。
 
 
 
