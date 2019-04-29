@@ -84,6 +84,16 @@ SIFT和SURF則均採取了FLANN的方法進行matching<br>
 *<p align="center">Infinite zooming result </p>*<br>
 我們用台達一樓木板凳做infinite zoom。理想上木板凳上面木條的接縫可以帶來很好的視覺效果，但是接起來後會有很明顯的邊界。
 
+| Type | Image | 
+| :--------: | :--------: | 
+|Original| ![](https://i.imgur.com/tM6JJgs.jpg)|
+|First effect | ![Alt Text](https://media.giphy.com/media/VzqaEkLza9A43bon6V/giphy.gif) | 
+|Seceond effect | ![Alt Text](https://media.giphy.com/media/VIVtDhjA5dA3JyNQ1x/giphy.gif)  |
+<br>
+<p align="center">Infinite zooming results </p><br>
+不斷下墜的infinite zoom effect設計過程中，發現道路上的標誌與字會在mapping中產生重複出現造成不真實感，於是我們在特效的處理前先進行影像的croping選取靠近大樓墻壁一側的圖像。effect設計了兩種，第一種是簡單的infinite的下墜，第二種effect在圖像邊緣設計了扭曲的特效，製造了下墜的動態感。
+
+
 
 ## Reference
 [1] Ethan Rublee, Vincent Rabaud, Kurt Konolige, Gary Bradski, 'ORB: an efficient alternative to SIFT or SURF', IEEE, 6-13 Nov. 2011.
